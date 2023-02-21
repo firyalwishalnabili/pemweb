@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribut datalist</title>
+</head>
+<body>
+    <datalist id="kontak">
+        <option value="tomi@yahoo.com" label="tomi"></option>
+        <option value="riko@gmail.com" label="riko"></option>
+        <option value="juminten@hotmail.com" label="juminten"></option>
+    </datalist>
+    <form id="formulir" action="submit.php" method="post">
+        <label>kontak:</label>
+        <input type="email" name="email" list="id-kontak">
+        <input type="submit" value="kirim">
+    </form>
+</body>
+</html>
